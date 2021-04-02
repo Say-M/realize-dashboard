@@ -1,0 +1,46 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  @media screen and (max-width: 767.98px) {
+    padding: 1rem;
+  }
+  .left-header {
+    h1 {
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+    }
+    small {
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+    }
+  }
+  .center-header {
+    h2 {
+      text-transform: capitalize;
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+  }
+  .right-header {
+    display: flex;
+    align-items: center;
+    img {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    i {
+      display: none;
+      cursor: pointer;
+      margin-left: 1rem;
+      font-size: 1.3rem;
+      @media screen and(max-width: 991.98px) {
+        display: block;
+      }
+    }
+  }
+}

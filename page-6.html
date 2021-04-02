@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realize Dashboard</title>
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+      integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"
+      integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./dist/styles.min.css" />
+    <!-- Custom Scripts -->
+    <script src="./scripts/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="left-header">
+        <h1>realize.</h1>
+        <small>by cors tech</small>
+      </div>
+      <div class="center-header">
+        <h2>bienvenue alexandre</h2>
+      </div>
+      <div class="right-header">
+        <img
+          src="./assets/images/81b6a7753042b1319a674f6d0555082be75df8b9.png"
+          alt="bienvenue alexandre"
+        />
+        <i class="fas fa-bars menu"></i>
+      </div>
+    </header>
+    <main>
+      <aside class="sidebar">
+        <div class="border">
+          <div class="header-sidebar">
+            <h5>bienvenue alexandre</h5>
+            <small class="text-muted">alexandre@gmail.com</small>
+          </div>
+          <ul class="body-sidebar">
+            <li>
+              <a href="#">point cors <span>65</span></a>
+              <a href="#">mes formations</a>
+              <a href="#">messagerie</a>
+              <a href="#">reductions</a>
+              <a href="#">profil partner</a>
+              <a href="#">reglage</a>
+              <a href="#" class="active">aiders</a>
+              <a href="#">
+                <div class="custom-control custom-switch">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customSwitch1"
+                  />
+                  <label class="custom-control-label" for="customSwitch1"
+                    >activator profil public</label
+                  >
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="footer-sidebar px-5">
+            <a href="#" class="btn btn-cyan d-block mb-2">Access Formature</a>
+            <a href="#" class="btn btn-transparent-red d-block mb-3"
+              >Deconxion</a
+            >
+          </div>
+        </div>
+      </aside>
+      <section class="content-body-wrapper">
+        <div class="content-body-inner border">
+          <div class="profile-section border-bottom">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde cum
+              exercitationem et quisquam maiores necessitatibus labore ex
+              aperiam voluptatum maxime!
+            </p>
+            <h5 class="mb-3">Profile public</h5>
+            <form action="#">
+              <div class="image-upload">
+                <img
+                  src="./assets/images/81b6a7753042b1319a674f6d0555082be75df8b9.png"
+                  alt=""
+                />
+                <div>
+                  <p class="mb-0">Bienvenue alexandre</p>
+                  <p class="mb-0">35 Age</p>
+                  <p class="mb-2">France, Paris</p>
+                  <a href="./page-5.html" class="btn btn-outline-cyan"
+                    >Modifier</a
+                  >
+                </div>
+              </div>
+              <div class="form-input">
+                <label for="description">description</label>
+                <textarea
+                  id="description"
+                  placeholder="Description..."
+                  class="w-100"
+                  rows="5"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-rounded btn-outline-cyan px-5 py-1"
+              >
+                save
+              </button>
+            </form>
+          </div>
+          <div class="profile-section border-bottom pt-3"></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

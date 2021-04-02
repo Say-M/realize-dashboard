@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realize Dashboard</title>
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+      integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"
+      integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./dist/styles.min.css" />
+    <!-- Custom Scripts -->
+    <script src="./scripts/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="left-header">
+        <h1>realize.</h1>
+        <small>by cors tech</small>
+      </div>
+      <div class="center-header">
+        <h2>bienvenue alexandre</h2>
+      </div>
+      <div class="right-header">
+        <img
+          src="./assets/images/81b6a7753042b1319a674f6d0555082be75df8b9.png"
+          alt="bienvenue alexandre"
+        />
+        <i class="fas fa-bars menu"></i>
+      </div>
+    </header>
+    <main>
+      <aside class="sidebar">
+        <div class="border">
+          <div class="header-sidebar">
+            <h5>bienvenue alexandre</h5>
+            <small class="text-muted">alexandre@gmail.com</small>
+          </div>
+          <ul class="body-sidebar">
+            <li>
+              <a href="#">point cors <span>65</span></a>
+              <a href="#">mes formations</a>
+              <a href="#">messagerie</a>
+              <a href="#">reductions</a>
+              <a href="#">profil partner</a>
+              <a href="#">reglage</a>
+              <a href="#" class="active">aiders</a>
+              <a href="#">
+                <div class="custom-control custom-switch">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customSwitch1"
+                  />
+                  <label class="custom-control-label" for="customSwitch1"
+                    >activator profil public</label
+                  >
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="footer-sidebar px-5">
+            <a href="#" class="btn btn-cyan d-block mb-2">Access Formature</a>
+            <a href="#" class="btn btn-transparent-red d-block mb-3"
+              >Deconxion</a
+            >
+          </div>
+        </div>
+      </aside>
+      <section class="content-body-wrapper">
+        <div class="content-body-inner border">
+          <div class="profile-section border-bottom">
+            <h5>Profile information</h5>
+            <p>Update your account's profile information and email address</p>
+            <form action="#">
+              <div class="image-upload">
+                <img
+                  src="./assets/images/81b6a7753042b1319a674f6d0555082be75df8b9.png"
+                  alt=""
+                />
+                <div>
+                  <input type="file" style="display: none" id="image-upload" />
+                  <label for="image-upload">Modifier la photo de profile</label>
+                  <div class="age">
+                    <label for="age">Age</label
+                    ><select id="age">
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                      <option value="24">24</option>
+                      <option value="25">25</option>
+                      <option value="26">26</option>
+                      <option value="27">27</option>
+                      <option value="28">28</option>
+                      <option value="29">29</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-input">
+                <label for="prénom">Prénom</label>
+                <input type="text" id="prénom" placeholder="Prénom" />
+              </div>
+              <div class="form-input">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" placeholder="Nom" />
+              </div>
+              <div class="form-input">
+                <label for="email">email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  class="lg-input"
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn btn-rounded btn-outline-cyan px-5 py-1"
+              >
+                save
+              </button>
+            </form>
+          </div>
+          <div class="profile-section border-bottom pt-3">
+            <h5>Password</h5>
+            <p>
+              Ensure your acount is using a long, random password to stay secure
+            </p>
+            <div class="form-input">
+              <label for="current-password">Current Password</label>
+              <input
+                type="password"
+                id="current-password"
+                placeholder="Current Password"
+                class="lg-input"
+              />
+            </div>
+            <div class="form-input">
+              <label for="new-password">new Password</label>
+              <input
+                type="password"
+                id="new-password"
+                placeholder="New Password"
+                class="lg-input"
+              />
+            </div>
+            <div class="form-input">
+              <label for="confirm-password">confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                placeholder="Confirm Password"
+                class="lg-input"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-rounded btn-outline-cyan px-5 py-1"
+            >
+              save
+            </button>
+          </div>
+          <div class="profile-section border-bottom pt-3">
+            <h5>Two factor authentication</h5>
+            <p class="mb-0" style="font-weight: 500">
+              Add additional security to your acount using two factor
+              authentification
+            </p>
+            <div class="px-3 pt-3">
+              <p class="mb-0" style="font-weight: 500">
+                You have not enabled two factor authentification
+              </p>
+              <p>
+                When two factor authentication is enabled, you will be prompted
+                for a secure, random token during authentication. You may
+                retrieve this token from your phone's Google Authenticator
+                application.
+              </p>
+              <div class="text-right">
+                <button
+                  type="submit"
+                  class="btn btn-rounded btn-outline-cyan px-5 py-1"
+                >
+                  enable
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="profile-section border-bottom pt-3">
+            <h5>Browser sessions</h5>
+            <p class="mb-0" style="font-weight: 500">
+              Manage and logout your active sessions on other browser and device
+            </p>
+            <div class="px-3 pt-3">
+              <p>
+                When two factor authentication is enabled, you will be prompted
+                for a secure, random token during authentication. You may
+                retrieve this token from your phone's Google Authenticator
+                application.
+              </p>
+              <ul class="device-lists">
+                <li>
+                  <i class="fas fa-tv"></i>
+                  <div>
+                    <p>OS X - firefox</p>
+                    <p>
+                      B.4.C085fd.88
+                      <span class="text-success">This device</span>
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <i class="fas fa-tv"></i>
+                  <div>
+                    <p>OS X - firefox</p>
+                    <p>
+                      B.4.C085fd.88
+                      <span class="text-success">This device</span>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <div class="text-right">
+                <button
+                  type="submit"
+                  class="btn btn-rounded btn-outline-cyan px-5 py-1"
+                >
+                  logout other browser session
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="profile-section pt-3">
+            <h5>Delete account</h5>
+            <p class="mb-0" style="font-weight: 500">
+              Permanently delete your account
+            </p>
+            <div class="px-3 pt-3">
+              <p>
+                When two factor authentication is enabled, you will be prompted
+                for a secure, random token during authentication. You may
+                retrieve this token from your phone's Google Authenticator
+                application.
+              </p>
+              <div class="text-right">
+                <button type="submit" class="btn btn-rounded btn-red px-5 py-1">
+                  Delete account
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

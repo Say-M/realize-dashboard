@@ -1,0 +1,59 @@
+.profile-section {
+  padding-bottom: 1rem;
+  h5 {
+    margin-bottom: 0;
+  }
+  form {
+    .image-upload {
+      display: flex;
+      margin-bottom: 1.5rem;
+      img {
+        margin-right: 1.5rem;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      & > div > label {
+        border: 2px solid $cyanWhite;
+        border-radius: 0.5rem;
+        padding: 0 0.5rem;
+        cursor: pointer;
+      }
+      .age {
+        select {
+          text-align: center;
+          margin-left: 1.5rem;
+          border: 2px solid $cyanWhite;
+          padding: 0 1rem;
+          border-radius: 0.5rem;
+          &:focus {
+            border: 2px solid $cyanWhite;
+          }
+        }
+      }
+    }
+  }
+  .device-lists {
+    list-style: none;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      i {
+        font-size: 1.3rem;
+      }
+      div {
+        margin-left: 1.5rem;
+        font-size: 0.9rem;
+        p {
+          margin-bottom: 0;
+          span {
+            margin-left: 0.5rem;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

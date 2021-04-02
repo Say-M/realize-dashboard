@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+  @media screen and (max-width: 991.98px) {
+    font-size: 17px;
+  }
+  @media screen and (max-width: 767.98px) {
+    font-size: 16px;
+  }
+}
+body {
+  background: $white;
+  font-family: $roboto;
+  font-size: 1rem;
+  color: $fontColor;
+}
+main {
+  padding: 1rem 2rem;
+  display: flex;
+  @media screen and (max-width: 767.98px) {
+    padding: 1rem;
+  }
+}
+.content-body-wrapper {
+  padding: 0 0 0 2rem;
+  width: 100%;
+  @media screen and (max-width: 991.98px) {
+    padding: 0;
+  }
+  .content-body-inner {
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+}
+label,
+button {
+  text-transform: capitalize;
+}
+.btn-cyan {
+  background-color: $cyan;
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+  &:focus {
+    border-color: transparentize($color: $cyan, $amount: 0.3);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem transparentize($color: $cyan, $amount: 0.75);
+  }
+}
+.btn-outline-cyan {
+  border: 1px solid $cyan;
+  &:hover {
+    background-color: $cyan;
+    color: $white;
+  }
+  &:focus {
+    border-color: transparentize($color: $cyan, $amount: 0.3);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem transparentize($color: $cyan, $amount: 0.75);
+  }
+}
+.btn-red {
+  background-color: $red;
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+  &:focus {
+    border-color: transparentize($color: $red, $amount: 0.3);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem transparentize($color: $red, $amount: 0.75);
+  }
+}
+.btn-outline-red {
+  border: 1px solid $red;
+  color: $red;
+  &:hover {
+    background-color: $red;
+    color: $white;
+  }
+  &:focus {
+    border-color: transparentize($color: $red, $amount: 0.3);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem transparentize($color: $red, $amount: 0.75);
+  }
+}
+.btn-transparent-red {
+  background: transparentize($color: $red, $amount: 0.85);
+  color: $red;
+  &:hover {
+    color: $red;
+    background: transparentize($color: $red, $amount: 0.75);
+  }
+  &:focus {
+    border-color: transparentize($color: $red, $amount: 0.3);
+    outline: none;
+    box-shadow: 0 0 0 0.2rem transparentize($color: $red, $amount: 0.75);
+  }
+}
+.btn-rounded {
+  border-radius: 10rem;
+}
