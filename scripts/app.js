@@ -25,3 +25,10 @@ headerMenu.addEventListener('click', () => {
     headerBars.classList.toggle('fa-bars')
     headerLists.forEach(headerList => headerList.classList.toggle('active'))
 })
+
+//header toggle
+const headerSwitch = document.querySelector('.custom-gradient-switch')
+
+headerSwitch.addEventListener('click', () => {
+    headerSwitch.classList.toggle('active')
+})

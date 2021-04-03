@@ -37,6 +37,7 @@ header {
       align-items: flex-end;
       justify-content: space-evenly;
       overflow: hidden;
+      cursor: pointer;
       &::before {
         content: '';
         width: 60%;
@@ -45,6 +46,7 @@ header {
         left: 0;
         top: 0;
         border-radius: 2rem;
+        transition: 0.1s;
         background-image: linear-gradient(
           to left,
           #e75852,
@@ -53,6 +55,11 @@ header {
           #a738ab,
           #6548c2
         );
+      }
+      &.active {
+        &::before {
+          left: 40%;
+        }
       }
       .line {
         position: relative;

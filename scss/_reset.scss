@@ -114,3 +114,21 @@ button {
 .btn-rounded {
   border-radius: 0.7rem;
 }
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+button:focus,
+select:focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
