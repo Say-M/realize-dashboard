@@ -1,0 +1,119 @@
+.sec_padd {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+footer {
+  background: #f3f4f9;
+  padding-bottom: 40px;
+}
+
+.footer_item {
+  margin-top: 50px;
+}
+
+.footer_item h3 {
+  color: #6d6d6d;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+.footer_item > ul {
+  list-style: none;
+}
+.footer_item > ul > li > a {
+  color: #000342;
+  font-size: 19px;
+  margin-bottom: 12px;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.footer_item > ul > li.dropdown {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footer_item > ul > li.dropdown > h5 {
+  color: #000342;
+  background: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 70px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 38px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.footer_item > ul > li.dropdown > h5:after {
+  content: '\f0d7';
+  position: absolute;
+  font-family: 'Font Awesome 5 free';
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 900;
+  font-size: 20px;
+  color: #6c757d;
+  pointer-events: none;
+}
+
+.footer_item > ul > li.dropdown > ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+  background: #fff;
+  padding: 15px 15px 5px;
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+
+.footer_item > ul > li.dropdown:hover ul {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.footer_item > ul > li.dropdown > ul li a {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer_bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_item h3 {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .footer_item > ul > li h5 {
+    font-size: 16px;
+  }
+
+  .footer_item {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer_bottom {
+    display: inherit;
+  }
+  .footer_bottom .logo {
+    margin-top: 15px;
+  }
+}

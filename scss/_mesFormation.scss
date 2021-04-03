@@ -1,0 +1,147 @@
+.mes-formations-section {
+  & > ul {
+    list-style: none;
+    & > li {
+      display: flex;
+      margin: 1rem 0;
+      border: 1px solid $cyanWhite;
+      padding: 1rem;
+      border-radius: 1rem;
+      @media screen and(max-width: 767.98px) {
+        flex-direction: column;
+      }
+      .left-mes {
+        position: relative;
+        border-radius: 1rem;
+        margin-right: 1rem;
+        width: 20rem;
+        @media screen and(max-width: 767.98px) {
+          margin-right: 0;
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+        .cart {
+          background: $white;
+          position: absolute;
+          left: 0.5rem;
+          top: 0.5rem;
+          border-radius: 0.5rem;
+          font-size: 70%;
+          display: flex;
+          align-items: center;
+          padding: 0.3rem;
+          img {
+            width: 2rem;
+            height: 1.5rem;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            margin-right: 0.5rem;
+          }
+          & > div {
+            line-height: 1;
+            span {
+              font-size: 65%;
+              color: #999999;
+            }
+          }
+        }
+        .live {
+          border: 2px solid $red;
+          color: $red;
+          padding: 0 0.5rem;
+          position: absolute;
+          right: 0.5rem;
+          top: 0.5rem;
+        }
+        & > img {
+          width: 100%;
+          height: 11rem;
+          object-fit: cover;
+          border-radius: 1rem;
+          @media screen and(max-width: 767.98px) {
+            height: 20rem;
+          }
+          @media screen and(max-width: 575.98px) {
+            height: 15rem;
+          }
+        }
+        i {
+          position: absolute;
+          top: 25%;
+          font-size: 1.3rem;
+          cursor: pointer;
+          &.fa-chevron-left {
+            left: 0.5rem;
+          }
+          &.fa-chevron-right {
+            right: 0.5rem;
+          }
+        }
+        h5 {
+          margin-top: 1rem;
+        }
+        h5,
+        p {
+          padding: 0 1rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+      }
+      .right-mes {
+        margin-left: 1rem;
+        position: relative;
+        @media screen and(max-width: 767.98px) {
+          margin-left: 0;
+        }
+        ul {
+          position: absolute;
+          right: 1rem;
+          top: 1rem;
+          background: $white;
+          width: 150px;
+          border-radius: 0.5rem;
+          overflow: hidden;
+          transition: 0.2s;
+          transform-origin: top right;
+          transform: scale(0);
+          &.active {
+            transform: scale(1);
+          }
+          li {
+            padding: 0.2rem 0.5rem;
+            cursor: pointer;
+            &:hover {
+              background: $cyanWhite;
+            }
+          }
+        }
+        h5 {
+          margin-bottom: 1rem;
+        }
+        i {
+          margin-top: 0.25rem;
+          cursor: pointer;
+        }
+        .noter {
+          i {
+            color: $yellow;
+          }
+        }
+        .comment {
+          input {
+            border: 2px solid $cyanWhite;
+            border-radius: 0.5rem;
+            padding: 0.2rem 0.5rem;
+            &:focus {
+              border-color: transparentize($color: $cyan, $amount: 0.3);
+              outline: none;
+              box-shadow: 0 0 0 0.2rem
+                transparentize($color: $cyan, $amount: 0.75);
+            }
+          }
+        }
+      }
+    }
+  }
+}
