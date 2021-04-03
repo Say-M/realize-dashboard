@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realize User Dashboard | Chatbox</title>
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+      integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"
+      integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./dist/styles.min.css" />
+    <!-- Custom Scripts -->
+    <script src="./scripts/app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="left-header">
+        <h1>realize.</h1>
+        <small>by cors tech</small>
+      </div>
+      <div class="center-header">
+        <h2>bienvenue alexandre</h2>
+      </div>
+      <div class="right-header">
+        <img
+          src="./assets/images/81b6a7753042b1319a674f6d0555082be75df8b9.png"
+          alt="bienvenue alexandre"
+        />
+      </div>
+    </header>
+    <main>
+      <aside class="sidebar">
+        <div class="border">
+          <div class="header-sidebar">
+            <h4>bienvenue alexandre</h4>
+            <small class="text-muted">alexandre@gmail.com</small>
+          </div>
+          <ul class="body-sidebar">
+            <li>
+              <a href="#">point cors <span>65</span></a>
+              <a href="#">mes formations</a>
+              <a class="active" href="#">messagerie</a>
+              <a href="#">reductions</a>
+              <a href="#">profil partner</a>
+              <a href="#">reglage</a>
+              <a href="javascript:viod(0)">
+                <label class="mb-0" for="customSwitch1"
+                  >Activator Profil Public</label
+                >
+                <div class="custom-control custom-switch mr-2">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customSwitch1"
+                    checked
+                  />
+                  <label
+                    class="custom-control-label"
+                    for="customSwitch1"
+                  ></label>
+                </div>
+              </a>
+              <a href="#">aiders</a>
+            </li>
+          </ul>
+          <div class="footer-sidebar px-5">
+            <a href="#" class="btn btn-cyan d-block mb-2">Access Formature</a>
+            <a href="#" class="btn btn-transparent-red d-block mb-3"
+              >Deconxion</a
+            >
+          </div>
+        </div>
+      </aside>
+      <section class="content-body-wrapper">
+        <div
+          class="content-body-inner border"
+          style="padding-top: 0; padding-bottom: 0"
+        >
+          <div class="chatbox-section">
+            <aside class="chat-sidebar">
+              <div class="chat-sidebar-header">
+                <div class="chat-search">
+                  <i class="fas fa-search"></i>
+                  <input type="text" placeholder="Search message..." />
+                </div>
+                <div class="chat-tab">
+                  <div class="active" id="chat-tab1">Formature</div>
+                  <div id="chat-tab2">Equipier</div>
+                </div>
+              </div>
+              <div class="chat-sidebar-body">
+                <ul>
+                  <li>
+                    <img
+                      src="./assets/images/95c40e95a06ff783e65af52ada8e44106169f64b.png"
+                      alt=""
+                    />
+                    <div>
+                      <h5>Jose morino</h5>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur
+                        <i class="fas fa-chevron-right"></i>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/27fc2f11953710673ec51b9a6db35b6467306973.png"
+                      alt=""
+                    />
+                    <div>
+                      <h5>Jose morino</h5>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur
+                        <i class="fas fa-chevron-right"></i>
+                      </p>
+                    </div>
+                  </li>
+                  <li class="active">
+                    <img
+                      src="./assets/images/2ed94a532960a860a0c754ecbaf64ca637ef1469.png"
+                      alt=""
+                    />
+                    <span class="online"></span>
+                    <div>
+                      <h5>Marie Lee</h5>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur
+                        <i class="fas fa-chevron-right"></i>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/56cfac4ec7f1fb80adecfa7ae9b9b7bb994720e1.png"
+                      alt=""
+                    />
+                    <div>
+                      <h5>Yonathan E</h5>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur
+                        <i class="fas fa-chevron-right"></i>
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/images/81b6a7753042b1319a674f6d0555082be75df8b9.png"
+                      alt=""
+                    />
+                    <div>
+                      <h5>Yonathan E</h5>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur
+                        <i class="fas fa-chevron-right"></i>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </aside>
+            <div class="chat-messages">
+              <div class="chat-message-header">
+                <div>
+                  <img
+                    src="./assets/images/2ed94a532960a860a0c754ecbaf64ca637ef1469.png"
+                    alt=""
+                  />
+                  <span class="online"></span>
+                  <div>
+                    <h5>Marie Lee</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+                <i class="fas fa-ellipsis-v chat-menu"></i>
+                <ul class="shadow chat-opts">
+                  <li>View</li>
+                  <li>Edit</li>
+                  <li>Delete</li>
+                </ul>
+              </div>
+              <div class="chat-message-body">
+                <div class="message-time">31 December, 2020 - 21:00</div>
+                <div class="message-in">
+                  <h6>Josh Morino</h6>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quibusdam itaque porro similique? Error similique, rem
+                    sapiente autem impedit exercitationem vel, nemo eos
+                    molestias odio omnis voluptatibus recusandae. Minus, maxime
+                    officiis.
+                  </p>
+                  <span class="text-right d-block">19:06</span>
+                </div>
+                <div class="message-out">
+                  <h6>Marie Lee</h6>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quibusdam itaque porro similique? Error similique, rem
+                    sapiente autem impedit exercitationem vel, nemo eos
+                    molestias odio omnis voluptatibus recusandae. Minus, maxime
+                    officiis.
+                  </p>
+                </div>
+                <div class="message-out">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Quibusdam itaque porro similique officiis.
+                  </p>
+                  <span class="text-right d-block">19:06</span>
+                </div>
+              </div>
+              <div class="chat-message-footer">
+                <form action="#">
+                  <i class="fas fa-microphone-alt"></i>
+                  <input type="text" placeholder="Enter message" />
+                  <button class="btn btn-outline-cyan" type="submit">
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
