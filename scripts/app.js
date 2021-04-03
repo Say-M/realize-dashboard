@@ -15,3 +15,13 @@ mesMenus.forEach(mesMenu => {
         this.nextElementSibling.classList.toggle('active')
     })
 })
+
+//header menu
+const headerMenu = document.querySelector('.menu')
+const headerBars = document.querySelector('.menu a i')
+const headerLists = document.querySelectorAll('.header-right-lists li')
+headerMenu.addEventListener('click', () => {
+    headerBars.classList.toggle('fa-times')
+    headerBars.classList.toggle('fa-bars')
+    headerLists.forEach(headerList => headerList.classList.toggle('active'))
+})
