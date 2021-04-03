@@ -27,7 +27,7 @@ aside.sidebar {
           text-decoration: none;
           padding: 1.12rem 0.834rem;
           border: 1px solid transparent;
-          border-radius: 0.3rem;
+          border-radius: 0.5rem;
           font-weight: 500;
           font-size: 1.12rem;
           display: flex;
@@ -39,6 +39,26 @@ aside.sidebar {
           &.active {
             color: darken($color: $cyan, $amount: 10);
             border: 1px solid $cyanWhite;
+          }
+          &.active {
+            position: relative;
+            overflow: hidden;
+            &::before {
+              content: '';
+              position: absolute;
+              right: 0;
+              top: 0;
+              height: 100%;
+              width: 1rem;
+              background-image: linear-gradient(
+                to bottom,
+                #e75852,
+                #e23d6e,
+                #cd308d,
+                #a738ab,
+                #6548c2
+              );
+            }
           }
           .custom-control-input:focus:not(:checked) ~ .custom-control-label {
             &::before {
