@@ -1,5 +1,5 @@
 .mes-formations-section {
-  & > ul {
+  & > ul:not(.cus-pagination) {
     list-style: none;
     & > li {
       display: flex;
@@ -65,7 +65,7 @@
             height: 15rem;
           }
         }
-        i {
+        & > i {
           position: absolute;
           top: 25%;
           font-size: 1.3rem;
@@ -87,6 +87,22 @@
         p {
           font-size: 0.9rem;
         }
+        .left-mes-footer {
+          border-top: 1px solid $yellow;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0.2rem 1rem;
+          & > div {
+            width: 50%;
+          }
+          strong {
+            text-align: center;
+            width: 50%;
+            border-left: 2px solid $yellow;
+            font-size: 1.7rem;
+          }
+        }
       }
       .right-mes {
         margin-left: 1rem;
@@ -94,7 +110,7 @@
         @media screen and(max-width: 767.98px) {
           margin-left: 0;
         }
-        ul {
+        & > ul {
           position: absolute;
           right: 1rem;
           top: 1rem;
@@ -117,7 +133,7 @@
           }
         }
         h5 {
-          margin-bottom: 1rem;
+          margin-bottom: 2rem;
         }
         i {
           margin-top: 0.25rem;
@@ -138,6 +154,20 @@
               outline: none;
               box-shadow: 0 0 0 0.2rem
                 transparentize($color: $cyan, $amount: 0.75);
+            }
+          }
+        }
+        .socials {
+          margin-top: 3rem;
+          h5 {
+            margin-bottom: 0.7rem;
+          }
+          ul {
+            list-style: none;
+            display: flex;
+            li {
+              margin-right: 1.5rem;
+              font-size: 1.7rem;
             }
           }
         }

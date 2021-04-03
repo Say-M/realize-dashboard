@@ -1,0 +1,30 @@
+.cus-pagination {
+  list-style: none;
+  border: 1px solid $cyanWhite;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  li {
+    margin: 0 1rem;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.active {
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: -0.1rem;
+        top: -0.1rem;
+        border: 2px solid $cyanWhite;
+        border-radius: 50%;
+        height: 2.2rem;
+        width: 2.2rem;
+      }
+    }
+  }
+}

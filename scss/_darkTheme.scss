@@ -1,0 +1,75 @@
+.dark-theme {
+  background: $darkMain;
+  color: $cyanWhite;
+
+  //sidebar
+  aside.sidebar > div {
+    background: $darkSecondary;
+    .body-sidebar li a {
+      color: $cyanWhite;
+      &.active,
+      &:hover {
+        border-color: $darkBorder;
+      }
+    }
+    .header-sidebar {
+      border-color: $darkBorder;
+    }
+    .footer-sidebar {
+      .btn-cyan {
+        background: $cyanWhite;
+        color: $cyan;
+      }
+      .btn-transparent-red {
+        background: $darkTransparentRed;
+      }
+    }
+  }
+
+  //content
+  .content-body-wrapper .content-body-inner {
+    background: $darkSecondary;
+
+    //mes formations
+    .mes-formations-section > ul:not(.cus-pagination) > li {
+      border-color: $darkBorder;
+    }
+  }
+
+  //pagination
+  .cus-pagination {
+    border-color: $darkBorder;
+    li {
+      &.active {
+        &::before {
+          border-color: $darkBorder;
+        }
+      }
+    }
+  }
+
+  //footer
+  footer {
+    background: $darkSecondary;
+    .footer_item > ul > li > a {
+      color: $cyanWhite;
+    }
+    .footer_item > ul > li.dropdown {
+      & > h5 {
+        background: $darkMain;
+        color: $cyanWhite;
+      }
+      & > ul {
+        background: $darkMain;
+        & > li > a {
+          color: $cyanWhite;
+        }
+      }
+    }
+  }
+
+  //resets
+  .border {
+    border-color: $darkBorder !important;
+  }
+}
