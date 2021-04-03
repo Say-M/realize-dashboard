@@ -6,9 +6,12 @@ aside.sidebar {
       padding: 1rem 0.5rem 0.5rem;
       border-bottom: 1px solid $cyan;
       padding-bottom: 0.3rem;
-      h5 {
+      h4 {
         text-transform: capitalize;
         margin-bottom: 0;
+      }
+      small {
+        font-size: 1rem;
       }
     }
     .body-sidebar {
@@ -22,10 +25,11 @@ aside.sidebar {
           text-transform: capitalize;
           color: $cyan;
           text-decoration: none;
-          padding: 0.5rem;
+          padding: 1.12rem 0.834rem;
           border: 1px solid transparent;
           border-radius: 0.3rem;
           font-weight: 500;
+          font-size: 1.12rem;
           display: flex;
           justify-content: space-between;
           span {
@@ -60,17 +64,8 @@ aside.sidebar {
   }
   @media screen and (max-width: 991.98px) {
     & > div {
-      position: absolute;
-      z-index: 11;
-      background: $white;
-      transition: 0.3s ease-in-out;
-      left: -100%;
-      &.active {
-        left: 2rem;
-        @media screen and (max-width: 991.98px) {
-          left: 1rem;
-        }
-      }
+      width: 100%;
+      margin-bottom: 2rem;
     }
   }
 }

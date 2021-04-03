@@ -21,6 +21,9 @@ body {
 main {
   padding: 1rem 2rem;
   display: flex;
+  @media screen and (max-width: 991.98px) {
+    flex-direction: column;
+  }
   @media screen and (max-width: 767.98px) {
     padding: 1rem;
   }
@@ -103,5 +106,5 @@ button {
   }
 }
 .btn-rounded {
-  border-radius: 10rem;
+  border-radius: 0.7rem;
 }

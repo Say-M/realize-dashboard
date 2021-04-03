@@ -8,7 +8,7 @@
   textarea {
     border: 1px solid $cyan;
     border-radius: 0.5rem;
-    padding: 0.3rem 0.5rem;
+    padding: 0.5rem 0.7rem;
     &:focus {
       border-color: transparentize($color: $cyan, $amount: 0.3);
       outline: none;

@@ -18,6 +18,9 @@ header {
     }
   }
   .center-header {
+    @media screen and(max-width: 767.98px) {
+      display: none;
+    }
     h2 {
       text-transform: capitalize;
       margin-bottom: 0;

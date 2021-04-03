@@ -1,7 +1,20 @@
 .profile-section {
   padding-bottom: 1rem;
-  h5 {
+  h4 {
     margin-bottom: 0;
+    .custom-control-input:focus:not(:checked) ~ .custom-control-label {
+      &::before {
+        border-color: transparentize($color: $green, $amount: 0.3);
+        box-shadow: 0 0 0 0.2rem transparentize($color: $green, $amount: 0.75);
+      }
+    }
+    .custom-control-input:checked ~ .custom-control-label {
+      &::before {
+        background-color: $green;
+        border-color: transparentize($color: $green, $amount: 0.3);
+        box-shadow: 0 0 0 0.2rem transparentize($color: $green, $amount: 0.75);
+      }
+    }
   }
   form {
     .image-upload {
@@ -53,6 +66,23 @@
             display: inline-block;
           }
         }
+      }
+    }
+  }
+  .multi-photos {
+    margin: 1rem 0;
+    border: 1px solid $cyan;
+    border-radius: 0.5rem;
+    text-align: center;
+    height: 10rem;
+    width: 100%;
+    cursor: pointer;
+    span {
+      position: relative;
+      top: 40%;
+      i {
+        font-size: 90%;
+        margin-left: 0.5rem;
       }
     }
   }

@@ -45,14 +45,13 @@
           src="./assets/images/81b6a7753042b1319a674f6d0555082be75df8b9.png"
           alt="bienvenue alexandre"
         />
-        <i class="fas fa-bars menu"></i>
       </div>
     </header>
     <main>
       <aside class="sidebar">
         <div class="border">
           <div class="header-sidebar">
-            <h5>bienvenue alexandre</h5>
+            <h4>bienvenue alexandre</h4>
             <small class="text-muted">alexandre@gmail.com</small>
           </div>
           <ul class="body-sidebar">
@@ -94,7 +93,17 @@
               exercitationem et quisquam maiores necessitatibus labore ex
               aperiam voluptatum maxime!
             </p>
-            <h5 class="mb-3">Profile public</h5>
+            <h4 class="mb-3">
+              Profile public
+              <div class="custom-control custom-switch d-inline ml-2">
+                <input
+                  type="checkbox"
+                  class="custom-control-input"
+                  id="customSwitch2"
+                />
+                <label class="custom-control-label" for="customSwitch2"></label>
+              </div>
+            </h4>
             <form action="#">
               <div class="image-upload">
                 <img
@@ -121,13 +130,112 @@
               </div>
               <button
                 type="submit"
-                class="btn btn-rounded btn-outline-cyan px-5 py-1"
+                class="btn btn-rounded btn-outline-cyan px-5 py-2 ml-3"
               >
                 save
               </button>
             </form>
           </div>
-          <div class="profile-section border-bottom pt-3"></div>
+          <div class="profile-section border-bottom pt-3">
+            <h5 class="mb-3">Aujouter des photos de vous</h5>
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <label for="multi-photo1" class="multi-photos">
+                  <span>inserer une photo <i class="fas fa-pen"></i></span>
+                </label>
+                <input class="d-none" type="file" id="multi-photo1" />
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <label for="multi-photo2" class="multi-photos">
+                  <span>inserer une photo <i class="fas fa-pen"></i></span>
+                </label>
+                <input class="d-none" type="file" id="multi-photo2" />
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <label for="multi-photo3" class="multi-photos">
+                  <span>inserer une photo <i class="fas fa-pen"></i></span>
+                </label>
+                <input class="d-none" type="file" id="multi-photo3" />
+              </div>
+            </div>
+            <div class="text-right">
+              <button
+                type="submit"
+                class="btn btn-rounded btn-outline-cyan px-5 py-2"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+          <div class="profile-section pt-3">
+            <h4>Notifications</h4>
+            <div class="px-3 pt-3">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur sunt error enim magni dolorem ut est repudiandae,
+                rerum incidunt deleniti.
+              </p>
+              <button
+                style="
+                  padding: 0 1rem;
+                  border: 1px solid #000342;
+                  border-radius: 0.5rem;
+                  background: #e9eafc;
+                "
+                class="btn mr-2"
+              >
+                Qui
+              </button>
+              <button
+                style="
+                  padding: 0 1rem;
+                  border: 1px solid #000342;
+                  border-radius: 0.5rem;
+                  background: #e9eafc;
+                "
+                class="btn"
+              >
+                Non
+              </button>
+            </div>
+            <div class="px-3 pt-3">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Consequuntur sunt error enim magni dolorem ut est repudiandae,
+                rerum incidunt deleniti.
+              </p>
+              <button
+                style="
+                  padding: 0 1rem;
+                  border: 1px solid #000342;
+                  border-radius: 0.5rem;
+                  background: #e9eafc;
+                "
+                class="btn mr-2"
+              >
+                Qui
+              </button>
+              <button
+                style="
+                  padding: 0 1rem;
+                  border: 1px solid #000342;
+                  border-radius: 0.5rem;
+                  background: #e9eafc;
+                "
+                class="btn"
+              >
+                Non
+              </button>
+            </div>
+            <div class="text-right">
+              <button
+                type="submit"
+                class="btn btn-rounded btn-outline-cyan py-2 px-5"
+              >
+                Save
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
