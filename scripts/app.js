@@ -32,3 +32,10 @@ const headerSwitch = document.querySelector('.custom-gradient-switch')
 headerSwitch.addEventListener('click', () => {
     headerSwitch.classList.toggle('active')
 })
+
+//header sidebar
+const topSidebarMenu = document.querySelector('.top-sidebar-menu')
+const topSidebar = document.querySelector('.top-sidebar')
+topSidebarMenu.addEventListener('click', () => {
+    topSidebar.classList.toggle('active')
+})

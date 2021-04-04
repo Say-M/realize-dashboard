@@ -28,6 +28,7 @@
 
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./dist/dashboard.min.css" />
+    <link rel="stylesheet" href="./dist/trainingpageheader.min.css" />
     <!-- Custom Scripts -->
     <script src="./scripts/app.js" defer></script>
   </head>
@@ -37,7 +38,7 @@
         <h1>realize.</h1>
         <small>by cors tech</small>
       </div>
-      <div class="center-header">
+      <div class="center-header" style="display: block">
         <div class="custom-gradient-switch">
           <div class="line"></div>
           <div class="line"></div>
@@ -53,9 +54,19 @@
           </li>
           <li>
             <a href="#">Francais <i class="fas fa-caret-down"></i></a>
+            <ul class="shadow">
+              <li><a href="#">Dropdown 1</a></li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+            </ul>
           </li>
           <li>
             <a href="#">Euros € <i class="fas fa-caret-down"></i></a>
+            <ul class="shadow">
+              <li><a href="#">Dropdown 1</a></li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+            </ul>
           </li>
           <li class="circle">
             <a href="#"><i class="fas fa-heart"></i></a>
@@ -68,9 +79,52 @@
           </li>
         </ul>
         <img
+          class="top-sidebar-menu"
           src="./assets/images/81b6a7753042b1319a674f6d0555082be75df8b9.png"
           alt="bienvenue alexandre"
         />
+        <div class="top-sidebar shadow">
+          <div class="header-sidebar">
+            <h5>bienvenue alexandre</h5>
+            <small class="text-muted">alexandre@gmail.com</small>
+          </div>
+          <ul class="body-sidebar">
+            <li>
+              <a href="#">point cors <span>65</span></a>
+              <a class="active" href="#"
+                >mes formations<i class="fa fa-chevron-right"></i
+              ></a>
+              <a href="#">messagerie<i class="fa fa-chevron-right"></i></a>
+              <a href="#">reductions<i class="fa fa-chevron-right"></i></a>
+              <a href="#">profil partner<i class="fa fa-chevron-right"></i></a>
+              <a href="#">reglage<i class="fa fa-chevron-right"></i></a>
+              <a href="javascript:viod(0)">
+                <label class="mb-0 mr-3" for="customSwitch1"
+                  >Activator Profil Public</label
+                >
+                <div class="custom-control custom-switch">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="customSwitch1"
+                    checked
+                  />
+                  <label
+                    class="custom-control-label"
+                    for="customSwitch1"
+                  ></label>
+                </div>
+              </a>
+              <a href="#">aiders<i class="fa fa-chevron-right"></i></a>
+            </li>
+          </ul>
+          <div class="footer-sidebar px-3">
+            <a href="#" class="btn btn-cyan d-block mb-2">Access Formature</a>
+            <a href="#" class="btn btn-transparent-red d-block mb-3"
+              >Deconxion</a
+            >
+          </div>
+        </div>
       </div>
     </header>
     <div class="search-header">
