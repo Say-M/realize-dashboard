@@ -30,3 +30,19 @@ const inputSwitch = document.querySelector('.input-switch')
 inputSwitch?.addEventListener('click', () => {
     inputSwitch.classList.toggle('active')
 })
+
+//Mes exercise input increment decrement
+const numberInputs = document.querySelectorAll('.number')
+const increments = document.querySelectorAll('.increment')
+const decrements = document.querySelectorAll('.decrement')
+
+increments?.forEach(increment => {
+    increment.addEventListener('click', function () {
+        this.nextElementSibling.lastElementChild.stepUp(1)
+    })
+})
+decrements?.forEach(decrement => {
+    decrement.addEventListener('click', function () {
+        this.previousElementSibling.lastElementChild.stepDown(1)
+    })
+})

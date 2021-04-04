@@ -71,34 +71,43 @@
         <div class="content-body-inner">
           <div class="mes-exercices-section">
             <div class="mes-exercices-header">
-              <h5>Mes excercices</h5>
-              <h5><i class="fas fa-plus mr-3"></i>Creer un excercice</h5>
+              <h5><i class="fas fa-plus mr-3"></i>Creer sous cours</h5>
+              <h5>Mes sous cours</h5>
             </div>
-            <div class="mes-exercices-filter">
-              <span>
-                <select>
-                  <option value="Sports">Sports</option>
-                  <option value="Sports">Sports</option>
-                </select>
-              </span>
-              <span>
-                <select>
-                  <option value="Lieux">Lieux</option>
-                  <option value="Lieux">Lieux</option>
-                </select>
-              </span>
-              <span>
-                <select>
-                  <option value="Material">Material</option>
-                  <option value="Material">Material</option>
-                </select>
-              </span>
+            <div class="mes-exercices-timeline">
+              <div class="line"></div>
+              <ul class="justify-content-around">
+                <li class="active">1</li>
+                <li>2</li>
+              </ul>
             </div>
-            <div class="table-responsive">
+            <form action="#">
+              <div class="form-input">
+                <label for="nom">Nom</label>
+                <input type="text" placeholder="Nom" id="nom" />
+              </div>
+              <div class="form-input">
+                <label for="description">Description</label>
+                <textarea
+                  type="text"
+                  rows="5"
+                  placeholder="Description"
+                  id="description"
+                ></textarea>
+              </div>
+              <div class="form-input">
+                <label for="excercices">Selectionner un excercice</label>
+                <select id="excercices">
+                  <option value="">excercice 1</option>
+                  <option value="">excercice 2</option>
+                </select>
+              </div>
+            </form>
+            <div class="table-responsive mt-4">
               <table class="mes-exercise-table text-nowrap">
                 <tbody>
                   <tr>
-                    <td style="width: 13rem">
+                    <td>
                       <span>
                         <img
                           src="./assets/images/019445fe616228e32cf95762bdae734847dcfa64.png"
@@ -135,7 +144,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td style="width: 13rem">
+                    <td>
                       <span>
                         <img
                           src="./assets/images/019445fe616228e32cf95762bdae734847dcfa64.png"

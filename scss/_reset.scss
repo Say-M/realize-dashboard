@@ -19,7 +19,7 @@ body {
   color: $fontColor;
 }
 main {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
   display: flex;
   @media screen and (max-width: 991.98px) {
     flex-direction: column;
@@ -45,7 +45,6 @@ a {
     padding: 1rem;
   }
 }
-label,
 button {
   text-transform: capitalize;
 }

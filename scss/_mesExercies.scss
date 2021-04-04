@@ -1,10 +1,12 @@
 .mes-exercices-section {
+  padding: 1rem;
   .mes-exercices-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
     flex-wrap: wrap;
     h5 {
+      font-size: 1.5rem;
       &:first-child {
         margin-right: 0.5rem;
       }
@@ -47,6 +49,7 @@
           position: relative;
           margin: 1rem 0;
           display: inline-block;
+          width: 100%;
           img {
             width: 9rem;
             height: 5rem;
@@ -58,7 +61,7 @@
             min-width: 150px;
             margin-bottom: 0;
             background: $darkMain;
-            right: 1rem;
+            right: 150%;
             top: -1.5rem;
             list-style: none;
             border-radius: 0.5rem;
@@ -79,6 +82,46 @@
                 &:hover {
                   background: $darkSecondary;
                 }
+              }
+            }
+          }
+          .dynamic-inputer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i {
+              background: $white;
+              color: $darkMain;
+              padding: 0.5rem;
+              border-radius: 0.3rem;
+              cursor: pointer;
+            }
+          }
+          .form-input {
+            margin: 0 0.5rem;
+            padding-left: 0;
+            input[type='number'] {
+              appearance: none;
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+            }
+            input,
+            select,
+            textarea {
+              background: $darkSecondary;
+              color: $white;
+              text-align: center;
+              background: $darkSecondary;
+              color: $cyanWhite;
+              width: 100%;
+              border: 1px solid $cyanWhite;
+              max-width: 100px;
+              padding: 0.4rem 0.7rem;
+              &:focus {
+                border: 1px solid $inputBorder;
+                box-shadow: none;
               }
             }
           }
@@ -135,9 +178,9 @@
         background: $darkSecondary;
         color: $cyanWhite;
         width: 100%;
-        border: 2px solid $darkMain;
+        border: 1px solid $darkMain;
         &:focus {
-          border: 2px solid transparentize($color: $cyanWhite, $amount: 0.3);
+          border: 1px solid $inputBorder;
           box-shadow: none;
         }
       }

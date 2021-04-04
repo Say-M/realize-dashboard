@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Realize User Dashboard | Mes Excercices</title>
 
-     <!-- Fontawesome -->
+    <!-- Fontawesome -->
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- Bootstrap -->
     <link rel="stylesheet" href="./dist/bootstrap.min.css" />
@@ -71,29 +71,17 @@
         <div class="content-body-inner">
           <div class="mes-exercices-section">
             <div class="mes-exercices-header">
-              <h5>Mes excercices</h5>
-              <h5><i class="fas fa-plus mr-3"></i>Creer un excercice</h5>
+              <h5><i class="fas fa-plus mr-3"></i>Creer sous cours</h5>
+              <h5>Mes sous cours</h5>
             </div>
-            <div class="mes-exercices-filter">
-              <span>
-                <select>
-                  <option value="Sports">Sports</option>
-                  <option value="Sports">Sports</option>
-                </select>
-              </span>
-              <span>
-                <select>
-                  <option value="Lieux">Lieux</option>
-                  <option value="Lieux">Lieux</option>
-                </select>
-              </span>
-              <span>
-                <select>
-                  <option value="Material">Material</option>
-                  <option value="Material">Material</option>
-                </select>
-              </span>
+            <div class="mes-exercices-timeline">
+              <div class="line"></div>
+              <ul class="justify-content-around">
+                <li class="active">1</li>
+                <li>2</li>
+              </ul>
             </div>
+            <h5 class="mb-3">Carateristique pour I'utilisateur</h5>
             <div class="table-responsive">
               <table class="mes-exercise-table text-nowrap">
                 <tbody>
@@ -135,6 +123,40 @@
                     </td>
                   </tr>
                   <tr>
+                    <td colspan="2">
+                      <span class="mt-1">
+                        <p class="text-center">Nombre de Repetition</p>
+                        <div class="dynamic-inputer">
+                          <i class="fas fa-plus increment"></i>
+                          <div class="form-input">
+                            <input
+                              class="number"
+                              min="0"
+                              type="number"
+                              value="0"
+                            />
+                          </div>
+                          <i class="fas fa-minus decrement"></i></div
+                      ></span>
+                    </td>
+                    <td><span class="mt-0">ou</span></td>
+                    <td colspan="2">
+                      <span class="mt-1">
+                        <p class="text-center">Temps de repetition</p>
+                        <div
+                          class="form-input d-flex align-items-center justify-content-center"
+                        >
+                          <input
+                            style="max-width: 100px; text-align: center"
+                            type="text"
+                            placeholder="00:00"
+                          />
+                          <small class="ml-3">sec-min</small>
+                        </div>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
                     <td style="width: 13rem">
                       <span>
                         <img
@@ -168,6 +190,40 @@
                           <li><a href="#">Edit</a></li>
                           <li><a href="#">Delete</a></li>
                         </ul>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <span class="mt-1">
+                        <p class="text-center">Nombre de Repetition</p>
+                        <div class="dynamic-inputer">
+                          <i class="fas fa-plus increment"></i>
+                          <div class="form-input">
+                            <input
+                              class="number"
+                              min="0"
+                              type="number"
+                              value="0"
+                            />
+                          </div>
+                          <i class="fas fa-minus decrement"></i></div
+                      ></span>
+                    </td>
+                    <td><span class="mt-0">ou</span></td>
+                    <td colspan="2">
+                      <span class="mt-1">
+                        <p class="text-center">Temps de repetition</p>
+                        <div
+                          class="form-input d-flex align-items-center justify-content-center"
+                        >
+                          <input
+                            style="max-width: 100px; text-align: center"
+                            type="text"
+                            placeholder="00:00"
+                          />
+                          <small class="ml-3">sec-min</small>
+                        </div>
                       </span>
                     </td>
                   </tr>
