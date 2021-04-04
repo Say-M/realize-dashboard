@@ -11,6 +11,9 @@ html {
   @media screen and (max-width: 767.98px) {
     font-size: 16px;
   }
+  @media screen and (max-width: 575.98px) {
+    font-size: 14px;
+  }
 }
 body {
   background: $white;
@@ -25,7 +28,10 @@ main {
     flex-direction: column;
   }
   @media screen and (max-width: 767.98px) {
-    padding: 1rem;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  @media screen and(max-width: 575.98px) {
+    padding: 1rem 0 2rem 0;
   }
 }
 a {

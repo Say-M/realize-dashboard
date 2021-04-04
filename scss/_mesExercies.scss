@@ -1,5 +1,8 @@
 .mes-exercices-section {
   padding: 1rem;
+  @media screen and(max-width: 575.98px) {
+    padding: 0;
+  }
   .mes-exercices-header {
     display: flex;
     justify-content: space-between;
@@ -7,6 +10,9 @@
     flex-wrap: wrap;
     h5 {
       font-size: 1.5rem;
+      @media screen and(max-width: 575.98px) {
+        font-size: 1.2rem;
+      }
       &:first-child {
         margin-right: 0.5rem;
       }
@@ -17,7 +23,7 @@
   }
   .mes-exercices-filter {
     display: flex;
-    margin: 1rem 0;
+    flex-wrap: wrap;
     select {
       background: $darkMain;
       border: none;
@@ -28,6 +34,7 @@
     }
     span {
       position: relative;
+      margin: 0.5rem 0;
       margin-right: 1rem;
       &::after {
         content: '';
@@ -44,17 +51,25 @@
     width: 100%;
     tr {
       td {
-        padding: 0.5rem;
+        padding: 0.5rem 1rem;
         & > span {
           position: relative;
           margin: 1rem 0;
           display: inline-block;
           width: 100%;
+          font-size: 0.85rem;
+          h5 {
+            font-size: 1rem;
+          }
           img {
             width: 9rem;
             height: 5rem;
             object-fit: cover;
             border-radius: 1rem;
+            @media screen and (max-width: 480px) {
+              width: 4rem;
+              height: 4rem;
+            }
           }
           ul {
             position: absolute;
@@ -102,6 +117,9 @@
             padding-left: 0;
             input[type='number'] {
               appearance: none;
+              @media screen and(max-width: 575.98px) {
+                width: 4rem;
+              }
             }
             input::-webkit-outer-spin-button,
             input::-webkit-inner-spin-button {
