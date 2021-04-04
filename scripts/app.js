@@ -2,7 +2,7 @@
 const chatMenu = document.querySelector('.chat-menu')
 const chatOpts = document.querySelector('.chat-opts')
 
-chatMenu && chatMenu.addEventListener('click', () => {
+chatMenu?.addEventListener('click', () => {
     chatOpts.classList.toggle('active')
     chatMenu.classList.toggle('fa-times')
     chatMenu.classList.toggle('fa-ellipsis-v')
@@ -10,32 +10,23 @@ chatMenu && chatMenu.addEventListener('click', () => {
 
 //mes menu
 const mesMenus = document.querySelectorAll('.mes-menu')
-mesMenus.forEach(mesMenu => {
+mesMenus?.forEach(mesMenu => {
     mesMenu.addEventListener('click', function () {
         this.nextElementSibling.classList.toggle('active')
     })
 })
 
-//header menu
-const headerMenu = document.querySelector('.menu')
-const headerBars = document.querySelector('.menu a i')
-const headerLists = document.querySelectorAll('.header-right-lists li')
-headerMenu.addEventListener('click', () => {
-    headerBars.classList.toggle('fa-times')
-    headerBars.classList.toggle('fa-bars')
-    headerLists.forEach(headerList => headerList.classList.toggle('active'))
+//mes exercise table
+const mesExerciseEllipsis = document.querySelectorAll('.mes-exercise-ellipsis')
+mesExerciseEllipsis?.forEach(mesExercise => {
+    mesExercise.addEventListener('click', function () {
+        this.lastElementChild.lastElementChild.classList.toggle('active')
+    })
 })
 
-//header toggle
-const headerSwitch = document.querySelector('.custom-gradient-switch')
+//input toggle
+const inputSwitch = document.querySelector('.input-switch')
 
-headerSwitch.addEventListener('click', () => {
-    headerSwitch.classList.toggle('active')
-})
-
-//header sidebar
-const topSidebarMenu = document.querySelector('.top-sidebar-menu')
-const topSidebar = document.querySelector('.top-sidebar')
-topSidebarMenu.addEventListener('click', () => {
-    topSidebar.classList.toggle('active')
+inputSwitch?.addEventListener('click', () => {
+    inputSwitch.classList.toggle('active')
 })

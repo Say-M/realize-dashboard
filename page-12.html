@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realize User Dashboard | Mes Excercices</title>
+
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+      integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"
+      integrity="sha512-wV7Yj1alIZDqZFCUQJy85VN+qvEIly93fIQAN7iqDFCPEucLCeNFz4r35FCo9s6WrpdDQPi80xbljXB8Bjtvcg=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./dist/dashboard.min.css" />
+    <!-- Custom Scripts -->
+    <script src="./scripts/app.js" defer></script>
+  </head>
+  <body class="dark-theme">
+    <header>
+      <div class="left-header">
+        <h1>realize.</h1>
+        <small>by cors tech</small>
+      </div>
+      <div class="center-header">
+        <h2>bienvenue alexandre</h2>
+      </div>
+      <div class="right-header">
+        <img
+          src="./assets/images/81b6a7753042b1319a674f6d0555082be75df8b9.png"
+          alt="bienvenue alexandre"
+        />
+      </div>
+    </header>
+    <main>
+      <aside class="sidebar">
+        <div class="border">
+          <div class="header-sidebar">
+            <h4>bienvenue alexandre</h4>
+            <small class="text-muted">alexandre@gmail.com</small>
+          </div>
+          <ul class="body-sidebar">
+            <li>
+              <a href="#">Mon activite</a>
+              <a href="#">Agendas</a>
+              <a href="#">messagerie</a>
+              <a href="#">mes client</a>
+              <a href="#">Mon profil</a>
+              <a href="./reglage.html">reglage</a>
+              <a href="#">Revenus</a>
+              <a href="#">Abonnements</a>
+              <a href="#" class="active">Mes formation</a>
+              <a href="#">Mes cours</a>
+              <a href="#">Mes sous cours</a>
+              <a href="#">Mes excercices</a>
+              <a href="#">Mes Articles</a>
+              <a href="#">Mes evenements</a>
+              <a href="#">Mes lives independant</a>
+            </li>
+          </ul>
+          <div class="footer-sidebar px-5">
+            <a href="#" class="btn btn-cyan d-block mb-2">Access Formature</a>
+            <a href="#" class="btn btn-transparent-red d-block mb-3"
+              >Deconxion</a
+            >
+          </div>
+        </div>
+      </aside>
+      <section class="content-body-wrapper">
+        <div class="content-body-inner border">
+          <div class="mes-exercices-section">
+            <div class="mes-exercices-header">
+              <h5><i class="fas fa-plus mr-3"></i>Creer une formation</h5>
+              <h5>Mes formation</h5>
+            </div>
+            <div class="mes-exercices-timeline">
+              <div class="line"></div>
+              <ul>
+                <li class="shadow">1</li>
+                <li class="shadow">2</li>
+                <li class="active">3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+              </ul>
+            </div>
+            <form action="#">
+              <h5 class="mb-4">Ajouter vous cours</h5>
+              <div class="form-input">
+                <select>
+                  <option value="">Selectionner votre cours</option>
+                </select>
+              </div>
+              <div class="text-right">
+                <button
+                  class="btn btn-rounded btn-outline-light px-5 py-2 mr-3"
+                >
+                  Enregistrer
+                </button>
+                <button class="btn btn-rounded btn-light px-5 py-2">
+                  Suivant
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="sec_padd">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="footer_item">
+              <h3>CATEGORIES</h3>
+              <ul>
+                <li>
+                  <a href="#">Sport</a>
+                </li>
+                <li>
+                  <a href="#">Buisness</a>
+                </li>
+                <li>
+                  <a href="#">Education</a>
+                </li>
+                <li>
+                  <a href="#">Bien etre</a>
+                </li>
+                <li>
+                  <a href="#">History</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="footer_item">
+              <h3>ABOUT</h3>
+              <ul>
+                <li>
+                  <a href="#">Our instructor</a>
+                </li>
+                <li>
+                  <a href="#">Our courses</a>
+                </li>
+                <li>
+                  <a href="#">Privacy policy</a>
+                </li>
+                <li>
+                  <a href="#">Terms of service</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="footer_item">
+              <h3>GESTION DES COMPTES</h3>
+              <ul>
+                <li>
+                  <a href="#">Consultez notre FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Contact support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6">
+            <div class="footer_item">
+              <ul>
+                <li class="dropdown">
+                  <h5>Français</h5>
+                  <ul>
+                    <li><a href="#">Français 1</a></li>
+                    <li><a href="#">Français 1</a></li>
+                    <li><a href="#">Français 1</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <h5>Euros €</h5>
+                  <ul>
+                    <li><a href="#">Euros 1</a></li>
+                    <li><a href="#">Euros 2</a></li>
+                    <li><a href="#">Euros 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="links">
+            <img
+              src="assets/images/footer/applestore_icon.png"
+              alt="not-found"
+            />
+            <img
+              src="assets/images/footer/playstore_icon.png"
+              alt="not-found"
+            />
+          </div>
+          <div class="logo">
+            <img src="assets/images/footer/footer_logo.png" alt="not-found" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
