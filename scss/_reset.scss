@@ -140,3 +140,30 @@ select:focus,
 .pnt {
   cursor: pointer;
 }
+.color-selection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  background: $darkSecondary;
+  border: 1px solid $darkMain;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  span {
+    &:first-child {
+      text-decoration: underline;
+    }
+    &:last-child {
+      width: 1rem;
+      height: 1rem;
+      background-image: linear-gradient(
+        to right,
+        #e75852,
+        #e23d6e,
+        #cd308d,
+        #a738ab,
+        #6548c2
+      );
+    }
+  }
+}
