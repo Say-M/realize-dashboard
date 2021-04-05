@@ -1,4 +1,26 @@
 .mes-formations-section {
+  .mes-formations-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    h5 {
+      font-size: 1.5rem;
+      a {
+        color: $cyanWhite;
+        text-decoration: none;
+      }
+      @media screen and(max-width: 575.98px) {
+        font-size: 1.2rem;
+      }
+      &:first-child {
+        margin-right: 0.5rem;
+      }
+      &:last-child {
+        margin-right: 0.5rem;
+      }
+    }
+  }
   & > ul:not(.cus-pagination) {
     list-style: none;
     & > li {
