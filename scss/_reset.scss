@@ -45,6 +45,7 @@ a {
   width: calc(100% - 360px);
   @media screen and (max-width: 991.98px) {
     padding: 0;
+    width: 100%;
   }
   .content-body-inner {
     border-radius: 0.5rem;

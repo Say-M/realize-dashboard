@@ -68,18 +68,6 @@
     }
   }
 
-  //mes formations
-  .mes-formations-section > ul:not(.cus-pagination) > li .left-mes {
-    @media screen and (max-width: 1170px) {
-      width: 50%;
-    }
-  }
-  .mes-formations-section > ul:not(.cus-pagination) > li .right-mes {
-    @media screen and (max-width: 1170px) {
-      width: 60%;
-    }
-  }
-
   //resets
   .border {
     border-color: $darkBorder !important;
